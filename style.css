@@ -1,0 +1,548 @@
+:root {
+    --BlueRob: rgba(76, 27, 224, 0.5);
+    --BlueRob2: rgba(131, 30, 199, 0.74);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: Monospace;
+}
+
+header {
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--BlueRob);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 99;
+}
+.contHeader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+.ClickHome {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ClickBox {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.NavbarBlocks {
+    margin: 10px;
+    color: white;
+}
+
+.NameHome {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.NameHome:hover {
+    font-size: 22px;
+    transition: .3s;
+}
+
+.NavbarBlocks:hover {
+    font-size: 13px;
+    transition: .3s;
+}
+
+main {
+    background-color: var(--semiwhite);
+    min-height: calc(100vh - 150px);
+}
+
+.scrollUp {
+    position: fixed;
+    z-index: 99999;
+    bottom: 100px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(137, 16, 148);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.IronIcon {
+    width: 15px;
+}
+
+.scrollUp:hover {
+    opacity: 0.9;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./image/484813412_680104861340809_2073270905166310310_n.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+.ContBlock1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    animation: fadeUp 1.2s ease forwards;
+}
+
+.ContBlock1 h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.ContBlock1 p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+.container2 {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px double var(--BlueRob);
+    border-top: 5px double var(--BlueRob);
+}
+
+.cont2Block1 {
+    min-width: 600px;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.GameTop1 {
+    position: relative;
+    width: 250px;
+    min-height: 350px;
+    background-color: gray;
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
+.GameTop2 {
+    position: relative;
+    width: 150px;
+    min-height: 250px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.GameTop2:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.GameTop1:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.card-text {
+    opacity: 0;
+    transform: translateY(0);
+    /* transition: opacity 0.4s ease, transform 0.4s ease; */
+}
+
+.GameTop2:hover .card-text1 {
+    opacity: 1;
+    transform: translateY(20px);
+}
+
+.GameTop1:hover .card-text {
+    opacity: 1;
+    transform: translateY(20px);
+}
+
+.card-text {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.card-text1 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.card-text span {
+    padding: 10px 20px;
+    font-size: 40px;
+    color: white;
+    padding: 30px;
+}
+
+.card-text p {
+    padding: 5px;
+    color: white;
+}
+
+.card-text1 span {
+    padding: 10px 20px;
+    font-size: 30px;
+    color: white;
+    padding: 30px;
+}
+
+.card-text1 p {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.imageTop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+
+.imageTop1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.GameTop2:hover .imageTop {
+    filter: brightness(20%);
+    transition: .5s;
+}
+
+.GameTop1:hover .imageTop1 {
+    filter: brightness(20%);
+    transition: .5s;
+}
+
+.blockTops {
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.container3 {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+    align-items: center;
+    gap: 200px;
+    padding: 0 calc(50vw - 150px);
+    scrollbar-width: none;
+}
+
+.container3::-webkit-scrollbar {
+    display: none;
+}
+
+.items {
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: center;
+    flex: 0 0 250px;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #fd79a8, #e84393);
+    scroll-snap-align: center;
+    animation: pop-in linear both;
+    animation-timeline: view(x);
+}
+
+.items img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(.5) rotate(-10deg);
+        opacity: .3;
+    }
+
+    50% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(.5) rotate(10deg);
+        opacity: .3;
+    }
+}
+.ContainerMap {
+    width: 100%;
+    padding: 60px 0;
+    border-top: 5px double var(--BlueRob);
+}
+
+.ContMap {
+    width: 66%;
+    margin: auto;              
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockMap{
+    width: 50%;
+}
+.ContainerMapText {
+    width: 50%;
+    text-align: center;  
+    color: var(--BlueRob2);      
+}
+.ContainerMapText h2{
+    padding-bottom: 30px;
+}
+.ContainerMapText P{
+    padding-bottom: 5px;
+}
+.blockMap {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.pMap{
+    padding-top: 20px;
+}
+.blockMap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.ContainerMapText {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    width: 100%;
+    min-height: 70px;
+    background-color: var(--BlueRob2);
+}
+
+.containerFooter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 20px 0;
+}
+.contactsON{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    min-height: 50px;
+}
+.contactsON img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.contactsON img:hover{
+    width: 45px;
+    height: 45px;
+}
+.NameFooter {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 0 20px 0;
+}
+
+@media (max-width: 768px) {
+    .ContMap {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .blockMap,
+    .ContainerMapText {
+        width: 100%;
+    }
+
+    .blockMap {
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+    }
+}
+@media screen and (max-width:650px) {
+    .GameTop1 {
+        width: 200px;
+        min-height: 250px;
+        flex-basis: 33%;
+        margin: 10px;
+    }
+
+    .GameTop2 {
+        width: 200px;
+        min-height: 250px;
+        flex-basis: 33%;
+    }
+
+    .cont2Block1 {
+        min-width: 350px;
+    }
+
+    .scrollUp {
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .GameTop1 {
+        width: 200px;
+        min-height: 250px;
+        flex-basis: 30%;
+        margin-left: 10px;
+    }
+
+    .blockTops {
+        font-size: 22px;
+    }
+
+    .GameTop2 {
+        width: 200px;
+        min-height: 250px;
+        flex-basis: 30%;
+    }
+
+    .cont2Block1 {
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .GameTop1 {
+        width: 150px;
+        margin: 0 auto;
+        min-height: 200px;
+        flex-basis: 33%;
+        margin: 10px 0;
+    }
+
+    .blockTops {
+        font-size: 22px;
+    }
+
+    .GameTop2 {
+        width: 150px;
+        margin: 0 auto;
+        min-height: 200px;
+        flex-basis: 33%;
+    }
+
+    .cont2Block1 {
+        min-width: 180px;
+    }
+
+    .card-text span {
+        padding: 10px 20px;
+        font-size: 30px;
+        color: white;
+        padding: 30px;
+    }
+
+    .card-text p {
+        padding: 5px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .items {
+        flex: 0 0 200px;
+        height: 250px;
+    }
+}
+@media (max-width: 768px) {
+    .ContBlock1 h1 {
+        font-size: 40px;
+    }
+    .ContBlock1 p {
+        font-size: 16px;
+    }
+}
